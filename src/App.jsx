@@ -1,11 +1,12 @@
-import './App.css'
-import ProductCard from './components/productCard'
+import React from 'react'
 
-function App() {
-  
-
+const App = () => {
   return (
-    <div className=''>
+    <div>
+      <div className='w-11 h-11 bg-black'>
+
+      </div>
+
     </div>
   )
 }
