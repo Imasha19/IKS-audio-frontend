@@ -10,21 +10,15 @@ export default function HomePage() {
     return (
        <>
        <Header/>
-       <div className="h-[calc(100vx-100px)] w-full">
-         <Routes path="/*">
-           <Route path="/contact" element={<Contact/>}/>
-           <Route path="/gallery" element={<Gallery/>}/>
-           <Route path="/items" element={<Items/>}/>
-           <Route path="/" element={<Home/>}/>
-           <Route path="/*" element={<ErrorNotFound/>}/>
-           
-         
-         
-         
+       <div className="h-[calc(100vh-100px)] w-full">
+         <Routes>
+           <Route path="/contact" element={<Contact />} />
+           <Route path="/gallery" element={<Gallery />} />
+           <Route path="/items" element={<Items />} />
+           <Route path="/" element={<Home />} />
+           <Route path="*" element={<ErrorNotFound />} />
          </Routes>
-
        </div>
-       
        </>
     );
 }
